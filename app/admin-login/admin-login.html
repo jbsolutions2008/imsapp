@@ -1,0 +1,37 @@
+<style type="text/css">
+    .css-form input.ng-invalid.ng-touched {
+      background-color: #FA787E;
+    }
+  
+    .css-form input.ng-valid.ng-touched {
+      background-color: #78FA89;
+    }
+  </style>
+<div class="form-page-background employee-login">
+    <!-- <div class="loading-overlay" *ngIf="loading">
+        <mat-spinner></mat-spinner>        
+    </div> -->
+    <div class="d-flex flex-column m-auto h-100">
+    <div class="row align-items-center mt-auto">
+        <div class="col-md-12">
+            <div class="form-header-logo-title">
+                <img src="assets/images/JBSolutions_Logo.png" height="100px" width="100px" class="form-logo-title img-responsive" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center align-items-center mb-auto">
+        <div class="col-lg-4 col-md-8 col-sm-10 push-lg-4 push-md-2 push-sm-1">
+            <div ng-controller="admin-login-controller">
+                <form novalidate class="css-form">
+                  <label>Username: <input type="text" ng-model="user.username" required /></label><br />
+                  <label>Password <input type="password" ng-model="user.password" required /></label><br />                                    
+                  <input type="submit" ng-click="login(user)" value="Login" />                
+                </form>
+                <!-- <pre>user = {{user | json}}</pre>
+                <pre>master = {{master | json}}</pre> -->
+              </div>
+        </div>
+    </div>
+</div>
+</div>

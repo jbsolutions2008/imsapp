@@ -1,0 +1,734 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800');
+
+/***** General Style Start *****/
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+}
+
+a {
+    color: #00a652;
+}
+
+a:active,
+a:focus,
+a:hover {
+    color: #21a7cf;
+    text-decoration: none;
+}
+
+hr {
+    border-top: 1px solid #e5e5e5;
+}
+
+.h6,
+h6 {
+    font-size: 1.15rem;
+}
+
+.padding-0 {
+    padding: 0px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.2rem !important;
+}
+
+.form-control {
+    border-radius: 0rem;
+    border-color: rgba(180, 180, 180, 1);
+}
+
+.small-lg {
+    font-size: 90%;
+}
+
+.text-grey-light {
+    color: #bbbbbb;
+}
+
+.text-primary {
+    color: #00a652 !important;
+}
+
+.success,
+.card-success {
+    background-color: #7cd626;
+    border-color: #7cd626;
+}
+
+.danger,
+.card-danger,
+.badge-danger {
+    background-color: #da5656;
+    border-color: #da5656;
+}
+
+.custom-control-indicator {
+    top: .10rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.custom-control-input:checked~.custom-control-indicator {
+    background-color: #00a652;
+}
+
+.custom-checkbox .custom-control-indicator {
+    border-radius: .10rem;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-top {
+    position: absolute !important;
+    top: 0;
+}
+
+.position-right {
+    position: absolute !important;
+    right: 0;
+}
+
+.position-bottom {
+    position: absolute !important;
+    bottom: 0;
+}
+
+.position-left {
+    position: absolute !important;
+    left: 0;
+}
+
+.max-four-digit {
+    width: 64px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/***** Button Custome Class Start *****/
+
+
+/*.mat-default {
+	 color: #00a652 !important;
+}*/
+
+
+/*.form-page-background .mat-default .mat-checkbox-label {
+	color: #ffffff;
+}
+
+.mat-button, .mat-icon-button, .mat-raised-button {
+	font-size:18px !important;
+	line-height: 48px !important;
+	font-family: 'Open Sans', sans-serif !important;
+	font-weight: 700 !important;
+}*/
+
+.mat-default {
+    color: #00a652 !important;
+}
+
+.mat-button,
+.mat-fab,
+.mat-icon-button,
+.mat-raised-button {
+    padding: 6px 16px !important;
+    font-size: 18px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.mat-fab,
+.mat-mini-fab {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.mat-mini-fab {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !important;
+}
+
+.mat-mini-fab-sm {
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.mat-mini-fab-sm .mat-icon {
+    font-size: 20px;
+    line-height: 14px !important;
+}
+
+.mat-btn-full {
+    width: 100%;
+}
+
+.mat-mini-20 {
+    width: 20px !important;
+    height: 20px !important;
+    line-height: 20px !important;
+    letter-spacing: 0px;
+}
+
+.mat-mini-20 .mat-button-wrapper {
+    float: left;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.mat-mini-20 .md16 {
+    font-size: 13px;
+    padding: 3px 0px !important;
+    letter-spacing: 0px;
+    width: 20px;
+}
+
+.mat-btn-linkdin {
+    background-color: rgba(40, 133, 184, 1) !important;
+}
+
+.form-page-background .mat-checkbox-frame {
+    border: 0px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.form-page-background .mat-checkbox-checked .mat-checkbox-background {
+    background-color: rgba(31, 193, 241, 1) !important;
+}
+
+.mat-fab.mat-accent[disabled],
+.mat-fab.mat-primary[disabled],
+.mat-fab.mat-warn[disabled],
+.mat-fab[disabled][disabled],
+.mat-mini-fab.mat-accent[disabled],
+.mat-mini-fab.mat-primary[disabled],
+.mat-mini-fab.mat-warn[disabled],
+.mat-mini-fab[disabled][disabled],
+.mat-raised-button.mat-accent[disabled],
+.mat-raised-button.mat-primary[disabled],
+.mat-raised-button.mat-warn[disabled],
+.mat-raised-button[disabled][disabled] {
+    background-color: rgba(31, 193, 241, 1);
+}
+
+.mat-mini-fab .mat-button-wrapper {
+    padding: inherit !important;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.form-page-background .mat-mini-fab {
+    background-color: #00a652;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/***** Button Custome Class End *****/
+
+.form-page-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: #4a4a4a;
+    color: #fff;
+    padding: 2em;
+}
+
+.form-header-logo-title {
+    display: block;
+    width: 100%;
+}
+
+.form-header-logo-title h6 {
+    font-weight: 600;
+    margin-bottom: 42px;
+    font-size: 1.20rem;
+    color: #ffffff;
+}
+
+.form-page-background .form-group-bg {
+    background-color: #686868;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.form-page-background .form-group-bg label {
+    margin-bottom: .82rem;
+    margin-top: .82rem;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.form-page-background .form-control {
+    display: block;
+    width: 100%;
+    padding: .82rem 0rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: transparent;
+    background-image: none;
+    background-clip: padding-box;
+    border: 0px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-page-background .form-control:focus {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #5cb3fd;
+    outline: 0;
+}
+
+.form-page-background .form-control::placeholder {
+    color: #c6c6c6;
+}
+
+.form-page-background .mui-btn,
+.welcome-screen-page .mui-btn {
+    height: auto !important;
+}
+
+select.form-control {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    letter-spacing: 1px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.30rem + 1px) !important;
+}
+
+.select-custome-arrow {
+    position: relative;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.select-custome-arrow select:focus {
+    background: #fff !important;
+    color: #4a4a4a !important;
+}
+
+.select-custome-arrow:before {
+    color: #c9c9c9;
+    display: block;
+    font-family: 'FontAwesome';
+    font-size: 1em;
+    height: 100%;
+    line-height: 2.4em;
+    padding: 0 0.625em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 2em;
+    content: "\f0d7";
+    z-index: 1;
+}
+
+.select-custome-arrow:before:focus {
+    color: #666666 !important;
+}
+
+.form-page-background select.form-control:not([size]):not([multiple]) {
+    height: calc(2.90rem + 2px) !important;
+}
+
+.form-page-background .select-custome-arrow:before {
+    line-height: 3.2em;
+}
+
+.sub-title {
+    font-weight: 600 !important;
+    color: #e2e2e2;
+}
+
+
+/*.mui-btn {
+	height: auto;
+}
+
+.mui-btn--linkedin{
+	color:#FFF;
+	background-color:#3580b6;
+}
+.mui-btn--linkedin:active, .mui-btn--linkedin:focus, .mui-btn--linkedin:hover{
+	color:#FFF;
+	background-color:#3580b6;
+}*/
+
+employee-header {
+    background-color: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.inner-page-heading-section {
+    background-color: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.inner-page-heading-section h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 1rem 0px;
+    color: #969696;
+    text-transform: uppercase;
+}
+
+.inner-page-heading-section hr {
+    background-color: rgba(229, 229, 229, 1);
+}
+
+.profile-image-bg {
+    float: right;
+    width: 145px;
+    height: 145px;
+    border-radius: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-image-bg a {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    background: #afafaf;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+    padding: 4px 5px 18px 5px;
+}
+
+.profile-image-bg img {
+    background: #000;
+    border-radius: 100%;
+}
+
+.profile-details .form-group {
+    margin-bottom: 8px !important;
+}
+
+.profile-details .form-control-lg,
+.profile-details .form-control-md,
+.profile-details .form-control-sm {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.profile-details .form-control-lg {
+    font-size: 1.75rem;
+    color: #00a652;
+}
+
+.profile-details .form-control-lg::placeholder {
+    color: #909090;
+}
+
+.profile-details .form-control-md {
+    font-size: 1.25rem;
+    color: #4a4a4a;
+}
+
+.profile-details .form-control-sm {
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+.profile-details .form-control-md::placeholder,
+.profile-details .form-control-sm::placeholder {
+    color: #525252;
+}
+
+.profile-details .form-group textarea {
+    min-height: 80px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.profile-save-edit {
+    height: 95%;
+}
+
+.profile-save-edit .position-relative {
+    height: 75%;
+}
+
+.social-icon-add-delete {
+    float: left;
+    width: 100%;
+}
+
+.social-icon-add-delete ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.social-icon-add-delete ul li {
+    float: left;
+    position: relative;
+    margin-right: 15px;
+}
+
+.social-icon-add-delete ul li i {
+    color: #00a652;
+    font-size: 36px;
+    float: left;
+}
+
+.social-icon-add-delete ul li .badge-pill {
+    letter-spacing: 0;
+    padding: 0px;
+    position: absolute;
+    right: -11px;
+    top: -8px;
+}
+
+.social-icon-add-delete ul li .badge-pill a {
+    float: left;
+    width: 17px;
+    height: 17px;
+    padding: 3px 4px;
+    letter-spacing: 0;
+}
+
+.social-icon-add-delete ul li .badge-pill i {
+    font-size: 12px;
+    color: #fff;
+}
+
+.social-icon-add-delete .social-icon-add {
+    float: left;
+}
+
+.social-icon-add-delete ul li:hover:before,
+.social-icon-add-delete ul li.active:before {
+    position: absolute;
+    content: "";
+    bottom: -14px;
+    left: 12%;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #00a652;
+}
+
+.social-icon-add-delete .social-icon-add .social-tooltip {
+    background: #4a4a4a;
+    position: absolute;
+    display: none;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 2px;
+    top: -35px;
+}
+
+.social-icon-add-delete .social-icon-add .social-tooltip:before {
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    left: 8%;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #4a4a4a;
+}
+
+.social-icon-add-delete .social-icon-add:hover .social-tooltip {
+    display: block;
+}
+
+.social-icon-add-delete .social-icon-add .social-tooltip span {
+    float: left;
+    margin: 1px 6px;
+}
+
+.social-icon-add-delete .social-icon-add .social-tooltip a {
+    color: #fff;
+    font-size: 130%;
+}
+
+
+/*.social-icon-add-delete ul .mat-mini-fab {
+  width:30px;
+  height:30px;
+  line-height: normal !important;
+}
+
+.social-icon-add-delete ul .mat-mini-fab .mat-icon {
+  font-size: 20px;
+  padding: 4px 0px;
+}*/
+
+
+/***** Model Popup Start *****/
+
+.modal-header {
+    border-bottom: 0px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.modal-header .close {
+    color: #202020;
+    text-shadow: 0 1px 0 #fff !important;
+    opacity: 1;
+}
+
+.modal-header .close:focus,
+.modal-header .close:hover {
+    color: #dd5454;
+    text-shadow: 0 1px 0 #dd5454 !important;
+}
+
+.modal-title {
+    width: 100%;
+}
+
+.modal-content {
+    border-radius: 0px;
+    background: #ffffff;
+    border: 0px;
+    color: #202020;
+    padding: 0px;
+}
+
+.modal-body {
+    padding: 0px 10px;
+}
+
+.modal-body hr {
+    background-color: rgba(151, 151, 151, 1);
+    margin: 30px 0px;
+}
+
+.modal-footer {
+    border-top: 0px;
+    display: inline-block;
+    padding: 0px 10px 40px 10px;
+}
+
+.modal-backdrop.show {
+    opacity: 0.35;
+}
+
+.modal-backdrop {
+    background-color: #000000;
+}
+
+
+/***** Model Popup Css End *****/
+
+.pagination {
+    display: inline-block;
+    width: 100%;
+}
+
+.pagination ul {
+    display: block;
+}
+
+.pagination ul li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 2px;
+}
+
+.pagination ul li a {
+    color: #444;
+    display: inline-block;
+    font-size: 0.9rem !important;
+    padding: 0 10px;
+    line-height: 16px;
+    height: 30px;
+    width: auto;
+    min-width: 5px;
+    font-weight: 500 !important;
+    padding: 7px 11px !important;
+}
+
+.pagination ul li a:hover {
+    background: #e2e2e2;
+}
+
+.pagination ul li.active a {
+    color: #fff;
+    background: #4a4a4a
+}
+
+.pagination ul li.first,
+.pagination ul li.last,
+.pagination ul li.next,
+.pagination ul li.previous {
+    border: 0px;
+    padding: 0px !important
+}
+
+.pagination ul li.first a,
+.pagination ul li.last a,
+.pagination ul li.next a,
+.pagination ul li.previous a {
+    padding: 3px !important
+}
+
+.pagination ul li.first a:hover,
+.pagination ul li.last a:hover,
+.pagination ul li.next a:hover,
+.pagination ul li.previous a:hover {
+    background: #424242;
+}
+
+.pagination ul li.first:hover,
+.pagination ul li.last:hover,
+.pagination ul li.next:hover,
+.pagination ul li.previous:hover {
+    border: 0px;
+    background-color: transparent;
+}
+
+.pagination ul li.disabled a {
+    cursor: default;
+    color: #999
+}
+
+.pagination ul li i {
+    font-size: 1.3rem;
+}
+
+.pagination ul li.pages ul li {
+    display: inline-block;
+    float: none;
+}

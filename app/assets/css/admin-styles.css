@@ -1,0 +1,58 @@
+/* You can add admin styles to this file */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800');
+
+/* Admin Header Start */
+
+fieldset {
+    border: 0px;
+}
+
+.admin-header .header .navbar {
+    background: #00a652 !important;
+}
+
+.sidebar {
+    background: #4a4a4a;
+}
+
+.breadcrumb {
+    background-color: #EDEDED;
+}
+
+.page-link {
+    color: #4a4a4a;
+}
+
+.page-link:focus,
+.page-link:hover {
+    color: #00a652;
+}
+
+.page-item.active .page-link {
+    background-color: #00a652;
+    border-color: #00a652;
+}
+
+.table-responsive thead,
+.table-responsive tbody {
+    width: 100%;
+    display: inline-table;
+}
+
+app-dashboard .card {
+    border: 0px;
+}
+
+app-dashboard .card .card-header h3.huge {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+app-dashboard .card .card-header h4 {
+    font-size: 1.1rem;
+}
+
+app-dashboard .card-footer {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}

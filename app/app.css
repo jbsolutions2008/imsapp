@@ -1,0 +1,425 @@
+/* You can add global styles to this file, and also import other style files */
+
+a {
+	color: #00a652;
+}
+.text-primary {
+	color: #00a652 !important;
+}
+.form-page-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: #4a4a4a;
+    color: #fff;
+    padding: 2em;
+}
+
+.form-header-logo-title {
+	display:block;
+	width: 100%;
+}
+	
+.form-header-logo-title h6 {
+	font-weight: 600;
+	margin-bottom: 42px;
+	font-size: 1.20rem;
+	color: #ffffff;
+}
+
+.form-page-background .form-group-bg {
+	background-color: #686868;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 2px 0px rgba(0,0,0,0.5);
+}
+
+.form-page-background .form-group-bg label {
+	margin-bottom: .82rem;
+	margin-top: .82rem;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight:500;
+	letter-spacing: 0.3px;
+}
+
+.form-page-background .form-control {
+    display: block;
+    width: 100%;
+    padding: .82rem 0rem;
+    /*font-size: 1rem;*/
+	font-size: 14px;
+    line-height: 1.45;
+	letter-spacing: 1px;
+    color: #ffffff;
+	background-color: transparent;
+    background-image: none;
+    background-clip: padding-box;
+    border: 0px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-page-background .form-control:focus {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #5cb3fd;
+    outline: 0;
+}
+
+.form-page-background .form-control::placeholder {
+	/*color: transperant !important;*/
+	color: #c6c6c6 !important;
+}
+
+.show-place-default.form-control::placeholder {
+	color:#ffffff !important;
+	font-size: 14px;
+    font-weight: 500;
+}
+
+.form-page-background .mui-btn, .welcome-screen-page .mui-btn {
+	height: auto !important;
+}
+
+select.form-control {
+	-moz-appearance: none;
+ 	-webkit-appearance: none;
+ 	appearance: none;
+	position: relative;
+	padding-left: 15px !important;
+	padding-right: 30px !important;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+select.form-control:not([size]):not([multiple]) {
+	height: calc(2.30rem + 1px) !important;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.select-custome-arrow {
+	position: relative;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.max-four-digit {		
+  	width:64px;		
+  	text-align: center;		
+  	display: inline-block;		
+}		
+select.max-four-digit {		
+	padding-left: 18px !important;		
+	padding-right: 18px !important;		
+}
+
+.form-page-background select.form-control:not([size]):not([multiple]) {
+	height: calc(2.90rem + 2px) !important;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.form-page-background .mat-form-field-label {
+	color: rgba(0,0,0,.6) !important;
+}
+
+.form-page-background .mat-form-field-appearance-legacy .mat-form-field-label {
+	color: rgba(255,255,255,0.8) !important;
+}
+
+.form-page-background .mat-form-field.mat-form-field-invalid .mat-form-field-ripple, .form-page-background .mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
+	background-color: #f44336;
+}
+
+.form-page-background .mat-form-field-appearance-legacy .mat-form-field-underline {
+	background-color: rgba(255,255,255,0.8) !important;
+}
+
+.form-page-background .mat-form-field.mat-focused .mat-form-field-ripple {
+	background-color: #007bff!important;
+}
+
+.default-link {
+	color: #c6c6c6;
+	text-decoration: none;
+}
+.default-link:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.mat-paginator-page-size {
+	margin-right: auto !important;
+    margin-left: 0px;
+}
+
+.loading-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+	top:0px;
+	left: 0px;
+	display: flex;
+	background: rgba(0,0,0,.7)
+}
+
+.loading-overlay .mat-progress-spinner {
+	margin: auto;
+}
+
+.loading-overlay .mat-progress-spinner svg {
+	width: 70px;
+	height: 70px;
+}
+
+.loading-overlay .mat-progress-spinner circle, .loading-overlay .mat-spinner circle {
+	stroke: #00a652;
+}
+
+.mat-table thead {
+	background: #00a652 !important;
+	color: #fff;
+}
+
+.mat-paginator {
+	background: #f2f2f2 !important;
+}
+
+.mat-mini-fab.mat-primary {
+	background-color: #00a652;
+}
+
+.mat-mini-fab.mat-primary {
+	box-shadow: 0 0px 5px -1px rgba(0,0,0,.2), 0 0px 8px 0 rgba(0,0,0,0.10), 0 0px 8px 0 rgba(0,0,0,0.1);
+}
+
+.mat-sort-header-sorted .mat-sort-header-stem, .mat-sort-header-sorted .mat-sort-header-arrow {
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.mat-cell .mat-mini-fab {
+	width: 34px;
+	height: 34px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+	box-shadow: 0 0px 5px -1px rgba(0,0,0,.2), 0 0px 8px 0 rgba(0,0,0,0.10), 0 0px 8px 0 rgba(0,0,0,0.1);
+}
+
+.mat-cell .mat-mini-fab .mat-button-wrapper {
+	padding: 4px 0;
+	line-height: 24px;
+}
+
+.mat-cell .material-icons {
+	font-size: 20px;
+}
+
+.mat-cell .mat-mini-fab.mat-dark {
+	background-color: #4a4a4a;
+	color: #ffffff;
+}
+
+.mat-paginator-range-actions .mat-icon-button {
+	background-color: #ffffff;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	box-shadow: 0 0px 5px -1px rgba(0,0,0,.2), 0 0px 8px 0 rgba(0,0,0,0.10), 0 0px 8px 0 rgba(0,0,0,0.1);
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.mat-paginator-range-label {
+	margin: 0 14px 0 14px !important;
+}
+
+.end-on-label .mat-radio-label {
+    margin-bottom: 0px;
+}
+
+.end-on-label-main .mat-form-field-infix {
+	margin-top: 0;
+	border-top: 0;
+}
+
+.progress-plan-custom {
+	position: relative;
+	width: 100%;
+	max-width: 200px;
+	height: 100%;
+}
+
+.progress-plan-fill {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: auto;
+	bottom: 0;
+	overflow: hidden;
+}
+.progress-plan-fill img {
+	position: absolute;
+	bottom: 0px;
+}
+.p-line {
+	width: 100%;
+	display: inline-block;
+	line-height: inherit;
+	vertical-align: middle;
+	background: #ddd;
+	height: 1px;
+}
+.progress-plan-list {
+	width: 100%;
+	margin-left: 15px;
+    position: relative;
+}
+.progress-wrap {
+	display: inline-flex;
+	width: 100%;
+	margin-bottom: 84.5px;
+	align-items: center;
+}
+.progress-li {
+	margin-left: 6px;
+}
+.progress-wrap:last-child {
+	margin-bottom: 0;	
+	position: relative;
+	bottom: -17px;
+}
+.progress-wrap:nth-child(2) {
+	position: relative;
+	top: -17px;
+}
+.current-process {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: end;
+}
+.current-process span {
+	width: 100%;
+	text-align: right;
+	position: relative;
+	color: #fc9b19;
+}
+.current-process span::after {
+	border-top: 1px dashed #fc9b19;
+	content: "";
+	left: 0;
+	right: 0;
+	display: block;
+	width: 64%;
+	position: absolute;
+	bottom: 0;
+}
+.current-process span p {
+	margin: 0 auto -8px;
+}
+
+.behind-schedule-section {
+	border: 2px solid #2c3449;
+	line-height: normal;
+}
+
+.behind-schedule-section .row:nth-child(odd) {
+	background-color: #ffffff;
+}
+
+.behind-schedule-section .row:nth-child(even) {
+	background-color: #2c3449;
+	color: #ffffff;
+}
+
+.behind-schedule-section .row:nth-child(even) small {
+	color: rgba(255, 255, 255, 0.60);
+}
+.behind-schedule-section .row:nth-child(odd) small {
+	color: rgba(44, 52, 73, 0.60);
+}
+
+.weekly-process-list {
+	
+}
+
+/* For Add Mat-Select mke visibel in bootstrap model popup window */
+.cdk-global-overlay-wrapper, .cdk-overlay-container { z-index: 9999!important; }
+body .header[_ngcontent-c3] .navbar[_ngcontent-c3] {
+	background: #00a652 !important;
+}
+.navbar-brand img {
+	border: 2px solid #fff;
+	border-radius: 100%;
+}
+.mat-sort-header-container .mat-sort-header-arrow {
+	color: #fff;
+}
+.mat-sort-header-sorted .mat-sort-header-stem{
+	color:#fff;
+}
+.breadcrumb{
+	background-color: #f7f7f7;
+border: 1px solid #ededed;
+}
+.text-muted {
+	font-size: 28px;
+	margin-bottom: 0;
+	color: #000 !important;
+}
+.mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+	background-color: #00a652 !important;
+}
+.mat-header-row th {
+	font-size: 14px;
+	font-weight: 500 !important;
+}
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{
+	background-color: #00a652 !important;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+	border-color: #00a652 !important;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+	background-color: #00a652 !important;
+}
+.card-header{font-size: 1.2em;}
+.modal-dialog {
+	max-width: 430px;
+	margin: 1.75rem auto;
+	min-width: 430px;
+}
+.modal-open .modal{
+	height: 100vh;
+display: flex !important;
+align-items: center;
+}
+.modal-header{
+	background: #f7f7f7;
+}
+.total-sec h2{
+	font-size: 26px;
+}
+.bg-light-gray{
+	background: #f7f7f7;
+	border-radius: .25rem;
+	border:1px solid #ededed;
+}
+a:hover{
+	color:#000;
+}
+
+.modal-dialog.modal-lg {
+    max-width: 530px;
+    width: 100%;
+    min-width: 300px;
+}
