@@ -6,14 +6,16 @@
   "repository": "https://github.com/jbsolutions2008/imsapp",
   "license": "MIT",
   "dependencies": {
-    "angular": "1.2.32",
+    "angular": "^1.8.2",
     "angular-loader": "1.2.32",
     "angular-route": "1.2.32",
     "html5-boilerplate": "0.0.1",
     "http-server": "^0.12.3",
+    "pouchdb-browser": "^7.2.1",
+    "pouchdb-find": "^7.2.2",
     "resolved": "https://registry.npmjs.org/angular/-/angular-1.2.32.tgz"
   },
   "scripts": {
-    "start": "http-server -a localhost -p 8000 -c-1 ./app"
+    "start": "http-server -a localhost -p 6831 -c-1 ./app"
   }
 }

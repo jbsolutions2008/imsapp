@@ -1,4 +1,4 @@
-<style type="text/css">
+<!-- <style type="text/css">
     .css-form input.ng-invalid.ng-touched {
       background-color: #FA787E;
     }
@@ -6,30 +6,43 @@
     .css-form input.ng-valid.ng-touched {
       background-color: #78FA89;
     }
-  </style>
+  </style> -->
 <div class="form-page-background employee-login">
-    <!-- <div class="loading-overlay" *ngIf="loading">
-        <mat-spinner></mat-spinner>        
-    </div> -->
+    <div class="loading-overlay align-items-center justify-content-center text-center " ng-if="showloading">
+      <img class=" align-items-center" src="assets/images/loading.gif" height="80px" width= >
+        <!-- <<mat-spinner></mat-spinner>>         -->
+    </div>
     <div class="d-flex flex-column m-auto h-100">
     <div class="row align-items-center mt-auto">
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
             <div class="form-header-logo-title">
-                <img src="assets/images/JBSolutions_Logo.png" height="100px" width="100px" class="form-logo-title img-responsive" />
+                <img src="assets/images/JBSolutions_Logo.png" class="form-logo-title img-responsive" />
             </div>
         </div>
     </div>
 
     <div class="row justify-content-center align-items-center mb-auto">
         <div class="col-lg-4 col-md-8 col-sm-10 push-lg-4 push-md-2 push-sm-1">
-            <div ng-controller="admin-login-controller">
-                <form novalidate class="css-form">
-                  <label>Username: <input type="text" ng-model="user.username" required /></label><br />
-                  <label>Password <input type="password" ng-model="user.password" required /></label><br />                                    
-                  <input type="submit" ng-click="login(user)" value="Login" />                
-                </form>
-                <!-- <pre>user = {{user | json}}</pre>
-                <pre>master = {{master | json}}</pre> -->
+            
+          <div ng-controller="admin-login-controller">
+                <form class="css-form text-center" name="form" novalidate >
+                  <label style="color:red" ng-bind="errorMessage"></label><br />
+                  <label class="mr-2">Username:</label>
+                    <input type="text" ng-model="user.username" name="username" required="" />
+                  
+                  <br />
+                  <div ng-show="form.$submitted || form.username.$touched">
+                    <div style="color: red;"ng-show="form.username.$error.required">Enter Username.</div>
+                  </div>
+                  <label class="mr-2 mt-3">Password:</label>
+                    <input type="password" ng-model="user.password" name="password" required="" />
+                  
+                  <br />
+                  <div ng-show="form.$submitted || form.password.$touched">
+                    <div style="color: red;" ng-show="form.password.$error.required">Enter Password.</div>
+                  </div>
+                  <input type="submit" ng-click="login(user)" value="Login" class="btn btn-warning mt-3" />                
+                </form>                
               </div>
         </div>
     </div>

@@ -1,0 +1,75 @@
+<!-- <style type="text/css">
+    .css-form input.ng-invalid.ng-touched {
+      background-color: #FA787E;
+    }
+  
+    .css-form input.ng-valid.ng-touched {
+      background-color: #78FA89;
+    }
+  </style> -->
+<div class="loading-overlay" ng-if="showloading">
+  <img class=" align-items-center mt-auto" src="assets/images/loading.gif" height="100px" width="100px" >
+    <!-- <<mat-spinner></mat-spinner>>         -->
+</div>
+<div class="header">
+  <div class="container">
+      <div class="row p-3 align-items-center">
+          <div class="logo">
+            <a href=""><img src="assets/images/JBSolutions_Logo.png"/></a>
+        </div>
+        <div class="login-button ml-auto d-flex">
+            <div class="mx-2">
+                <a class="btn btn-success" style="cursor:pointer;" ng-click="redirecttoproductlist()">Manage Product</a>
+            </div>
+            <div class="mx-2">
+                <a class="btn btn-success" style="cursor:pointer;" ng-click="redirecttoaddproduct()">Add Product</a>
+            </div>
+            <div class="mx-2">
+                <a class="btn btn-warning" style="cursor:pointer;" ng-click="logout()">Logout</a>
+            </div>
+          </div>
+      </div>      
+  </div>
+</div>
+<div class="dashboard">
+  <hr>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h2>Add/Edit Product</h2>
+          </div>            
+      </div>
+      <div ng-controller="admin-add-edit-product-controller">
+        <form class="css-form" name="form" novalidate>
+            <label style="color:red" ng-bind="errorMessage"></label><br />
+            <label style="color:green" ng-bind="successMessage"></label><br />
+            <label>Name: <input type="text" ng-model="product.name" name="name" required="" /></label><br />
+            <div ng-show="form.$submitted || form.name.$touched">
+              <div style="color: red;"ng-show="form.name.$error.required">Enter Name.</div>
+            </div>
+            <label>Price <input type="text" ng-model="product.price" name="price" required=""  /></label><br />
+            <div ng-show="form.$submitted || form.price.$touched">
+              <div style="color: red;"ng-show="form.price.$error.required">Enter Price.</div>
+            </div>
+            <label>Brand: <select ng-model="product.brand" name="brand" required=""  >
+                <option value="Puma">Puma</option>
+                <option value="Rolex">Rolex</option>
+                <option value="US Polo">US Polo</option>
+            </select><br />
+            <div ng-show="form.$submitted || form.brand.$touched">
+              <div style="color: red;"ng-show="form.brand.$error.required">Select Brand.</div>
+            </div>
+            <label>Details <input type="text" ng-model="product.details" name="details" required=""  /></label><br />                                    
+            <div ng-show="form.$submitted || form.details.$touched">
+              <div style="color: red;"ng-show="form.details.$error.required">Enter Details.</div>
+            </div>
+            <input type="hidden" id="_id" />
+            <input type="submit" ng-click="saveproduct(product)" value="Save" />&#160;            
+          </form>
+    </div>
+  </div>
+</div>
+
+
+
+</html>

@@ -1,0 +1,32 @@
+<div class="pos-f-t fixed-top header" ng-controller="admin-header-controller">
+    <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" (click)="toggleSidebar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#"><img src="assets/images/JBSolutions_Logo.png" height="50px" width="50px" /></a>
+
+        <!--<a class="nav-link navbar-toggler" (click)="toggleSidebar()">&#9776;</a>-->
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            </form>-->
+            <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
+                        <i class="icon-user icons d-block mt-0"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="jvascript:void(0)"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        <!-- <a class="dropdown-item" href="jvascript:void(0)"><i class="icon-envelope-letter icons d-block"></i> Inbox</a>
+                        <a class="dropdown-item" href="jvascript:void(0)"><i class="fa fa-fw fa-gear"></i> Settings</a> -->
+                        <a class="dropdown-item" href="jvascript:void(0)" (click)="onLoggedout()"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
