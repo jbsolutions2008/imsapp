@@ -2,19 +2,19 @@
 var db = new PouchDB('imspdb');
 
 var remoteCouch = true;
-var remoteDB = new PouchDB('http://208.113.131.185/imspdb')
+var remoteDB = new PouchDB('http://localhost:5984/imspdb')
 addAdminUser();
-db.replicate
-  .to(remoteDB)
-  .on('complete', function (response) {
-	  console.log(response);
-    // local changes replicated to remote
-  }).on('error', function (err) {
-	console.log(err);
-    // error while replicating
-  })
+// db.replicate
+//   .to(remoteDB)
+//   .on('complete', function (response) {
+// 	  console.log(response);
+//     // local changes replicated to remote
+//   }).on('error', function (err) {
+// 	console.log(err);
+//     // error while replicating
+//   })
 // DATABASE SYNC WITH BROWSER DATABASE WHEN APP LOADING
-//db.sync(remoteDB, {live: true, "auth": {username:"admin", password:"p@ssw0rd"}})
+db.sync(remoteDB, {live: true, "auth": {username:"admin", password:"p@ssw0rd"}})
 
 //FUNCTION TO ADD ADMIN USER IN DATABASE
 function addAdminUser() {	
