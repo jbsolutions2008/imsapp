@@ -1,5 +1,6 @@
 'use strict';
 var db = new PouchDB('imspdb');
+
 angular.module('myApp.admin-product-list', ['ngRoute', 'ui.grid', 'ui.grid.pagination'])
 
 .config(['$routeProvider', function($routeProvider) {

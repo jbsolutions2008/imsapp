@@ -1,6 +1,6 @@
 'use strict';
 var db = new PouchDB('imspdb');
-
+//var db = new PouchDB('http://208.113.131.185:5984/imspdb');
 angular.module('myApp.admin-add-edit-product', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
